@@ -40,8 +40,8 @@ public class Counter {
 	// TODO: dev1- method for decrement to closest even number
 	public void decrementToEven() {
 		if (_ctr % 2 == 0) {
-			_ctr--;
-			_ctr--;
+			_ctr= _ctr - 2;
+			
 		} 
 	}
 
