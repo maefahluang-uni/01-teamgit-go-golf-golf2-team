@@ -9,11 +9,12 @@ public class Counter {
 
 	// method increments _ctr
 	public void increment() {
-		_ctr--; // faulty increment
+		_ctr++; // faulty increment
 	}
 
 	// method decrements _ctr
 	public void decrement() {
+	
 		_ctr++; // faulty decrement
 	}
 
