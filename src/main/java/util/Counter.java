@@ -40,7 +40,7 @@ public class Counter {
 	}
 
     private boolean isPrime(int num) {
-        if (num < 2) {
+        if (num <= 1) {
             return false;
         }
         for (int i = 2; i <= Math.sqrt(num); i++) {
@@ -53,6 +53,7 @@ public class Counter {
 
     // Method for incrementing to the closest prime number
     public void incrementToPrime() {
+		increment();
         while (!isPrime(_ctr)) {
             _ctr++;
         }
@@ -60,6 +61,7 @@ public class Counter {
 
     // Method for decrementing to the closest prime number
     public void decrementToPrime() {
+		decrement();
         while (!isPrime(_ctr)) {
             _ctr--;
         }
