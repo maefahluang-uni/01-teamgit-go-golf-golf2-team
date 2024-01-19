@@ -15,7 +15,7 @@ public class Counter {
 	// method decrements _ctr
 	public void decrement() {
 	
-		_ctr++; // faulty decrement
+		_ctr--; // faulty decrement
 	}
 
 	// method resets _ctr
@@ -41,7 +41,7 @@ public class Counter {
 
 	// TODO: dev2- method for increment to closest prime number
 	public void incrementToPrime() {
-		_ctr = -99;
+		_ctr = 99;
 	}
 
 	// TODO: dev2- method for decrement to closest prime number
