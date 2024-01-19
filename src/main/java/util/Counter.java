@@ -52,7 +52,18 @@ public class Counter {
 	// TODO: dev3- count the frequency of word in sentence,
 	// refactor source code from dev1 and dev2
 	public void countFrequency(String word, String sentence) {
-		_ctr = -99;
+		String[] words = sentence.split("\\s+");
+        int count = 0;
+
+        for (String w : words) {
+            // Remove punctuation if needed
+            w = w.replaceAll("[^a-zA-Z0-9]", "");
+
+            if (w.equals(word)) {
+                count++;
+            }
+        }
+		_ctr = count;
 	}
 
 }
